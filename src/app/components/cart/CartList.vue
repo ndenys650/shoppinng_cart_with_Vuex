@@ -22,7 +22,7 @@
 
 <script>
 import { mapGetters } from 'vuex';
-import { CartListItem } from './CartListItem';
+import CartListItem from './CartListItem';
 
 export default {
   name: 'CartList',
