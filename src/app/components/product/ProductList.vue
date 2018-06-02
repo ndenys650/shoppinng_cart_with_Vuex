@@ -5,7 +5,7 @@
     </div>
     <div class="product-list">
       <div v-for="productItem in productItems" :key="productItem.id" class="product-list--item">
-        <productListItem :productItem="productItem"></productListItem>
+        <ProductListItem :productItem="productItem"></ProductListItem>
       </div>
     </div>
     <div class="product-count has-text-right">
@@ -16,7 +16,7 @@
 
 <script>
 import { mapGetters } from 'vuex';
-import productListItem from './productListItem';
+import ProductListItem from './ProductListItem';
 
 export default {
   name: 'ProductList',
@@ -30,7 +30,7 @@ export default {
     this.$store.dispatch('getProductItems')
   },
   components: {
-      productListItem
+      ProductListItem
   }
 }
 </script>
